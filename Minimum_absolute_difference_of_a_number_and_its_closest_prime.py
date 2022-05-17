@@ -16,9 +16,9 @@ for i in range(n,1,-1):
     if(p(i)):
         d1=i
         break
-if(d2-n > n-d1):
-    print(abs(d1-n))
+if(n-d2 < d1-n):
+    print(abs(n-d1))
 else:
-    print(abs(n-d2))
+    print(abs(d2-n))
     
     
