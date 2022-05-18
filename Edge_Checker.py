@@ -1,9 +1,9 @@
-m,n=input().split()
-m=int(m)
-n=int(n)
-if n+1==m or m+1==n:
-    print("Yes")
-elif m==10 and n==1 or m==1 and n==10:
-    print("Yes")
+a, b = input().split()
+a=int(a)
+b=int(b)
+if(a+1==b or b+1==a):
+    print('Yes')
+elif(a==10 and b==1 or a==1 and b==10):
+    print('Yes')
 else:
-    print("No")
+    print('No')
