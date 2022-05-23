@@ -13,16 +13,13 @@ d=0
 d1=0
 for i in range(n-1,1,-1):
     if(pl(i)):
-        d=i
+        d+=i
         break
-for i in range(n+1,10000000,1):
+for i in range(n+1,10000000):
     if(pl(i)):
         d1=i
         break
 if (n-d==d1-n):
-    print("%d"%d,end=' ')
-    print("%d"%d1)
-elif(n-d>d1-n):
-    print(d1)
+    print(d,d1)
 else:
     print(d)
