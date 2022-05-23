@@ -1,0 +1,21 @@
+m=int(input())
+n=m%10
+m=m//10
+o=m%10
+m=m//10
+p=m%10
+m=m//10
+q=m%10
+m=m//10
+if(q==6):
+    q=9
+elif(p==6):
+    p=9
+elif(o==6):
+    o=9
+elif(n==6):
+    n=9
+print(q,end='')
+print(p,end='')
+print(o,end='')
+print(n,end='')
