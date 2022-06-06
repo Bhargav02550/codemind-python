@@ -1,7 +1,7 @@
 n=input()
 a='aeiouAEIOU'
-b=[]
 c=0
+b=[]
 for i in n:
     if i in a:
         if i not in b:
