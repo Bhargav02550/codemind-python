@@ -1,7 +1,10 @@
+def c(n):
+    return len(str(n))
 n=int(input())
 a=list(map(int,input().split()))
 for i in a:
     if i<0:
-        print(len(str(i))-1,end=' ')
+        k=i*-1
+        print(c(k),end=' ')
     else:
-        print(len(str(i)),end=' ')
+        print(c(i),end=' ')
