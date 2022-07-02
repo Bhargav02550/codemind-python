@@ -1,6 +1,5 @@
 n=input()
-w=n.split(" ")
-k=w[::-1]
-m=[w[::-1]for w in k]
-l=" ".join(m)
-print(l)
+n=n.split(" ")
+k=n[::-1]
+for i in k:
+    print(i[::-1],end=' ')
