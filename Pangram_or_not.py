@@ -1,6 +1,5 @@
 n=input().lower()
-m=set(n)
-if len(m)>=26:
+if len(set(n))>=26:
     print(True)
 else:
     print(False)
