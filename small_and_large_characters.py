@@ -1,5 +1,4 @@
 n=input()
-m=n.split(" ")
-for i in range(len(m)):
-    print(min(m[i]),end=' ')
-    print(max(m[i]),end=' ')
+n=n.split(" ")
+for i in n:
+    print(min(i),max(i),end=' ')
