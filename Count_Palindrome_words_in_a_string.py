@@ -1,10 +1,11 @@
 def p(n):
-    if n.lower()==n.lower()[::-1]:
-        return True
-n=input()
+    if n[::-1]==n:
+        return 1
+    else:
+        return 0
+n=input().lower().split()
 c=0
-w=n.split(' ')
-for i in w:
-    if(p(i)):
+for i in n:
+    if p(i):
         c+=1
 print(c)
