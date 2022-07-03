@@ -1,15 +1,15 @@
-def s(n):
-    r=s=0
-    while(n>0):
-        r=n%10
-        s=s+(r*r)
-        n=n//10
-    return s
-n=int(input())
-res=n
-while(res!=1 and res!=4):
-    res=s(res)
-if(res==1):
-    print(True)
-elif(res==4):
-    print(False)
+number = int(input())
+sum = 0
+while True:
+    while number!=0:
+        sum+=(number%10)**2
+        number//=10
+    if sum==1 or sum==7:
+        print(True)
+        break
+    elif sum<10:
+        print(False)
+        break
+    else:
+        number=sum
+        sum=0
