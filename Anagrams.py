@@ -1,6 +1,6 @@
-n=input()
-m=input()
-if(sorted(n.lower())==sorted(m.lower())):
+n=input().lower()
+m=input().lower()
+if set(n)==set(m):
     print(True)
 else:
     print(False)
