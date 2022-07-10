@@ -1,3 +1,2 @@
-n=input()
-m=n.split(" ")
-print(*sorted(m))
+n=input().split()
+print(*sorted(n))
