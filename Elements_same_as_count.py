@@ -4,7 +4,6 @@ c=0
 b=[]
 for i in sorted(set(a),key=a.index):
     if a.count(i)==i:
-        if a.count(i)==i:
             print(i,end=" ")
             c = 1
 if(c==0):
