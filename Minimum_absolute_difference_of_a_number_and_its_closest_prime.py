@@ -10,15 +10,13 @@ d2=0
 d1=0
 for i in range(n,10000000,+1):
     if(p(i)):
-        d2=i
+        d1=i
         break
 for i in range(n,1,-1):
     if(p(i)):
-        d1=i
+        d2=i
         break
-if(n-d2 < d1-n):
-    print(abs(n-d1))
+if(n-d1 < d2-n):
+    print(abs(n-d2))
 else:
-    print(abs(d2-n))
-    
-    
+    print(abs(d1-n))
