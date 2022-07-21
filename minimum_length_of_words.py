@@ -1,8 +1,6 @@
-n=input()
-n=n.split(" ")
-m=9999999
+n=input().split(" ")
+m=99999
 for i in n:
-    a=len(i)
-    if a<m:
-        m=a
+    if len(i)<m:
+        m=len(i)
 print(m)
