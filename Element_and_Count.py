@@ -1,8 +1,8 @@
-n = int(input())
-arr = list(map(int,input().split()))
-se = []
-for i in arr:
-    if i not in se:
-        se.append(i)
-for i in se:
-    print(i,arr.count(i),end=" ")
+n=int(input())
+a=list(map(int,input().split()))
+s=[]
+for i in a:
+    if i not in s:
+        s.append(i)
+for i in s:
+    print(i,a.count(i),end=' ')
