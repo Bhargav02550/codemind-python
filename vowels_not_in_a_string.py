@@ -1,13 +1,13 @@
 n=input()
 a='aeiou'
-l,j=[],[]
+c,d=[],[]
 for i in n:
     if i in a:
-        l.append(i)
+        c.append(i)
 for i in a:
-    if i not in l:
-        j.append(i)
-if len(j)==0:
+    if i not in c:
+        d.append(i)
+if len(d)==0:
     print("0")
 else:
-    print(*j)
+    print(*d)
