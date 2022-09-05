@@ -1,7 +1,7 @@
 n=input().lower()
-b=[]
+s=[]
 for i in n:
-    if i not in b and i!=' ':
-        b.append(i)
-for i in sorted(b):
+    if i not in s and i!=' ':
+        s.append(i)
+for i in sorted(s):
     print(i,end='')
