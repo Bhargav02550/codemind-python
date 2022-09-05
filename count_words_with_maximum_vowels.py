@@ -1,17 +1,13 @@
-s = input().lower().split(' ')
-m,c=0,0
-for i in range(len(s)):
-    d = 0
-    for j in s[i]:
+n=input().split(" ")
+d=[]
+for i in range(len(n)):
+    c=0
+    for j in n[i]:
         if j in 'aeiou':
-            d+=1
-    if d>m:
-        m=d
-for i in range(len(s)):
-    d = 0
-    for j in s[i]:
-        if j in 'aeiou':
-            d+=1
-    if d==m:
-        c+=1
-print(c)
+            c+=1
+    d.append(c)
+e=0
+for i in d:
+    if i==max(d):
+        e+=1
+print(e)
