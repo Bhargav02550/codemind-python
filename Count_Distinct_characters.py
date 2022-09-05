@@ -1,4 +1,6 @@
-n = input().lower().replace(" ","")
-c=set(n)
-a=list(c)
-print(len(a))
+n=input().lower()
+s=[]
+for i in n:
+    if i not in s and i!=' ':
+        s.append(i)
+print(len(s))
