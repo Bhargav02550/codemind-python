@@ -1,7 +1,6 @@
-s = input().lower()
-s = s.replace(" ","")
-x = 0
-for i in s:
-    if s.count(i)==1:
-        x+=1
-print(x)
+n=input().lower()
+c=0
+for i in n:
+    if n.count(i)==1 and i!=' ':
+        c+=1
+print(c)
