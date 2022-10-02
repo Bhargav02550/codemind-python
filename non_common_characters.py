@@ -1,18 +1,12 @@
-s1 = input().lower()
-s2 = input().lower()
-a = ''
-for i in s1:
-    if i not in s2 and i not in a:
-        a+=i
-for i in s2:
-    if i not in s1 and i not in a:
-        a+=i
-a=sorted(a)
-a = str(a)
-a = a.replace("[","")
-a = a.replace("]","")
-a = a.replace("'","")
-a = a.replace(" ","")
-a = a.replace(",","")
-a = a.replace(" ","")
-print(a)
+n=input().lower()
+m=input().lower()
+s=''
+for i in n:
+    if i not in m and i not in s:
+        s+=i
+for i in m:
+    if i not in n and i not in s:
+        s+=i
+s=s.replace(" ","")
+for i in sorted(s):
+    print(i,end='')
